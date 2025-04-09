@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Monitoring App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="container">
+        <h1>Website Monitoring</h1>
+        <br />
+        <p>Enter a website URL to check its status in real-time.</p>
+        <div class="input-container">
+          <input
+            type="text"
+            id="siteUrl"
+            placeholder="Enter website URL (e.g., https://example.com)"
+          />
+          <button onclick="checkStatus()">Check Status</button>
+        </div>
+        <div id="result" class="result-box hidden">
+          <h2>Status:</h2>
+          <br />
+          <p id="siteChecked"><strong>Site Checked:</strong> -</p>
+          <p>
+            <strong>Response Time:</strong> <span id="responseTime">-</span>
+          </p>
+          <p><strong>Site Status:</strong> <span id="siteStatus">-</span></p>
+          <p>
+            <strong>Last Downtime:</strong> <span id="lastDowntime">-</span>
+          </p>
+        </div>
+        <p>
+          <br />© 2025 <strong>Manish Kumar</strong>. Built with ❤️ using AWS.
+        </p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

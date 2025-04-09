@@ -1,0 +1,143 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Ensure full height layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main content grows to fill space */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container - Glassmorphism */
+.container {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  max-width: 600px;
+  margin: 0 auto; /* changed from 40px auto to just center horizontally */
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffdd00;
+  text-shadow: 0px 3px 8px rgba(255, 221, 0, 0.5);
+}
+
+p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Input Section */
+.input-container {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: #fff;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 150, 255, 0.3);
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 20px;
+  padding: 22px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  text-align: left;
+  box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Status Colors & Emojis */
+.status-up::before {
+  content: "✅ ";
+  color: #4caf50;
+}
+
+.status-down::before {
+  content: "❌ ";
+  color: #ff5252;
+}
+
+.site-checked {
+  font-size: 17px;
+  font-weight: bold;
+  color: #00e1ff;
+  text-shadow: 0px 3px 10px rgba(0, 225, 255, 0.6);
+}
+
+/* Error Message */
+.error {
+  color: #ff4444; /* Bright red */
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 0px 2px 6px rgba(255, 0, 0, 0.5); /* Softer glow */
+  background: rgba(255, 68, 68, 0.1); /* Light red tint */
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+}
