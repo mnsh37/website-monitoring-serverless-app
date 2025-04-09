@@ -72,13 +72,4 @@ website-monitoring-app/
 
 **Manish Kumar**  
 Built with ❤️ using AWS Serverless  
-[LinkedIn](https://www.linkedin.com/mnshkumr) · [Portfolio](#) *(Add your portfolio link)*
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-```
-
----
+[LinkedIn](https://www.linkedin.com/mnshkumr)
