@@ -6,7 +6,7 @@ A modern, real-time website monitoring tool built using AWS Serverless technolog
 
 ## 🔗 Live Demo
 
-Check out the live working version here: [Website Monitoring App](http://http://site-monitoring-frontend.s3-website.ap-south-1.amazonaws.com/)  
+Check out the live working version here: [Website Monitoring App](http://site-monitoring-frontend.s3-website.ap-south-1.amazonaws.com)  
 *(Deployed using Amazon S3 Static Website Hosting)*
 
 ---
